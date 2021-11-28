@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import Datatable from "./datatable/datatable";
 
 function App() {
+  const tableData = [
+      {
+          Username: "booker12",
+          Identifier: "9012",
+          "First Name": "Rachel",
+          "Last Name": "Booker",
+      },
+      {
+          Username: "grey07",
+          Identifier: "2070",
+          "First Name": "Laura",
+          "Last Name": "Grey",
+      },
+      {
+          Username: "johnson81",
+          Identifier: "4081",
+          "First Name": "Craig",
+          "Last Name": "Johnson",
+      },
+      {
+          Username: "jenkins46",
+          Identifier: "9346",
+          "First Name": "Mary",
+          "Last Name": "Jenkins",
+      },
+      {
+          Username: "smith79",
+          Identifier: "5079",
+          "First Name": "Jamie",
+          "Last Name": "Smith",
+          VIP: "true",
+      },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Datatable data={tableData}></Datatable>
   );
 }
 
